@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Banho e Tosa</title>
+</head>
+
+<style>
+    body{ 
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+
+
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 700px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <span>24/03/2026, 21:03</span>
+        <span>Formulário Banho e rosa</span>
+    </header>
+ 
+    <br>
+    <br>
+    
+    <a href="menu.html">home</a>
+
+    <h1>Agendamento para banho e tosa</h1>
+
+    <h2>Faça seu agendamento com pelo menos 48 horas de antecedência</h2>
+    
+    <fieldset>
+       <legend>Identificação do dono do animal</legend>
+
+       <br>
+
+        <form autocomplete="off" method="post">
+
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" size="54px">
+            
+            <br>
+            <br>
+
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="iiendereco" placeholder="Digite o endereço" size="50px">
+            
+            <br>
+            <br>
+
+            <label for="cep">CEP: </label>
+            <input type="text" name="cep" id="icep" placeholder="XXXXX-XXX" size="55px">
+
+            <br>
+            <br>
+
+            <label for="telefonecelular">TEL/CEL:</label>
+            <input type="tel" name="telcel" id="itelcel" placeholder=" 99 9 9999-9999" size="51px">
+
+    </fieldset>
+    <fieldset>  
+            <legend>Animal</legend>
+            
+            <br>
+
+            <label for="nome">Nome: </label>
+            <input type="text" name="nomeanimal" id="inomeanimal" placeholder="Digite o nome do animal" size="54px">
+
+            <br>
+            <br>
+
+            <label for="porte">Porte do cão:</label>
+
+            <input type="radio" name="pequeno" id="ipequeno">
+            <label for="pequeno">Pequeno</label>
+
+            <input type="radio" name="medio" id="imedio">
+            <label for="medio">Médio</label>
+
+            <input type="radio" name="grande" id="igrande">
+            <label for="grande">Grande</label>
+            
+            <br>
+            <br>
+
+            <label for="tosa">Tipo de tosa: </label>
+            <select name="tosa" id="itosa">
+                <option value="">Nenhuma</option>
+                <option value="">Higiênica</option>
+                <option value="">Tosa completa</option>
+                <option value="">Tosa na tesoura</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="obs">Observações: </label>
+            <textarea name="obs" id="iobs" placeholder="Digite alguma informação do animal se necessário"></textarea>
+
+    </fieldset>
+    <fieldset>
+
+        <legend>Horario - obs: Não atendemos aos domingos e as segundas-ferias</legend>
+       
+        <br>
+
+        <label>Indique os dias da semana de sua preferência</label>
+        <input type="checkbox">
+        <label>terça-feira</label>
+
+        <input type="checkbox">
+        <label>quarta-feira</label>
+
+        <input type="checkbox">
+        <label>quinta-feira</label>
+
+        <input type="checkbox">
+        <label>sexta-feira</label>
+
+        <input type="checkbox">
+        <label>sabádo</label>
+
+        <br>
+        <br>
+
+        <label for="horario">Primeira opção de horários: </label>
+        <input type="date" placeholder="dd/mm/aaaa">
+
+        <br>
+        <br>
+
+        <label for="horario">Segunda opção de horários: </label>
+        <input type="date" placeholder="dd/mm/aaaa">
+
+        <br>
+        <br>
+    
+    </form>
+    
+    </fieldset>
+   
+    <button type="submit">Enviar</button>
+
+</body>
+</html>
